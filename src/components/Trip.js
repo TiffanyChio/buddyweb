@@ -30,7 +30,7 @@ class Trip extends Component {
 
     console.log(`HELLO WORLD: A1904${process.env.REACT_APP_API_KEY}175hajdss`);
 
-    axios.get(`/trips/${ id }`)
+    axios.get(`${ BASE_URL}/trips/${ id }`)
       .then((response) => {
         const centerLat = (response.data["destination_latitude"] + response.data["current_latitude"])/2;
         const centerLng = (response.data["destination_longitude"] + response.data["current_longitude"])/2
@@ -71,7 +71,7 @@ class Trip extends Component {
       return;
     }
 
-    axios.get(`/trips/${ this.state.id }`)
+    axios.get(`${ BASE_URL}/trips/${ this.state.id }`)
       .then((response) => {
         let convertedStatus = "ONGOING";
 
