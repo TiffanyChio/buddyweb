@@ -62,7 +62,7 @@ class Trip extends Component {
         console.log("Error. Could not get API data at component mount: ", error.data);
 
         this.setState({
-          status: "TRIP WAS NOT FOUND. PLEASE CHECK URL AND TRY AGAIN."
+          status: "ERROR"
         });
       });
   }
@@ -121,8 +121,8 @@ class Trip extends Component {
         <div className="map-container loading-container">
           { this.state.id === null ?
             <p className="center-text">
-              { this.state.status === "TRIP WAS NOT FOUND. PLEASE CHECK URL AND TRY AGAIN." ?
-                "Error."
+              { this.state.status === "ERROR" ?
+                "TRIP WAS NOT FOUND. PLEASE CHECK URL AND TRY AGAIN."
                 :
                 "Loading..."
               }
@@ -150,6 +150,9 @@ class Trip extends Component {
           <p className={"body-text center-text"}>Current Location: { this.state.currentLat + ", " + this.state.currentLng }</p>
           <p className={"body-text center-text"}>Destination: { this.state.destinationAddress }</p>
         </div>
+        <footer>
+          <p>© 2020 Buddy. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+        </footer>
       </div>
     );
   }

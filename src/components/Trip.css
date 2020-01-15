@@ -65,3 +65,12 @@ p {
 .danger-status {
   color: red;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 10vh;
+  font-size: 12px;
+  padding: 10px;
+}
