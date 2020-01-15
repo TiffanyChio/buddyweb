@@ -55,8 +55,8 @@ class Trip extends Component {
         });
 
         // Time interval specified in ms
-        // This is currently every 15s
-        this.intervalID = setInterval(this.getData, 15000);
+        // This is currently every 10s
+        this.intervalID = setInterval(this.getData, 10000);
       })
       .catch((error) => {
         console.log("Error. Could not get API data at component mount: ", error.data);
