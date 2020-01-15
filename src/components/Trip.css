@@ -1,0 +1,67 @@
+p {
+  margin-bottom: 0;
+}
+
+.main-container {
+  background-color: #36454f;
+  height: 100vh;
+  color: #8a989e;
+}
+
+.body-container {
+  background-color: #36454f;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+}
+
+.heading-text {
+  font-size: 2rem;
+}
+
+.plug-text {
+  font-size: 0.75rem;
+}
+
+.app-title {
+  font-size: 1.25rem;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.map-container {
+  height: 80vh;
+  width: 100vw;
+  border: 1px #e2e7ea solid;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #F9F9FB;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.body-text {
+  padding-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.danger-status {
+  color: red;
+}
