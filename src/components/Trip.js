@@ -28,8 +28,6 @@ class Trip extends Component {
   componentDidMount() {
     const {id} = this.props;
 
-    console.log(`HELLO WORLD: A1904${process.env.REACT_APP_API_KEY}175hajdss`);
-
     axios.get(`${ BASE_URL}/trips/${ id }`)
       .then((response) => {
         const centerLat = (response.data["destination_latitude"] + response.data["current_latitude"])/2;
