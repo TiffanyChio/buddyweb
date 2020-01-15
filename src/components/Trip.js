@@ -60,6 +60,10 @@ class Trip extends Component {
       })
       .catch((error) => {
         console.log("Error. Could not get API data at component mount: ", error.data);
+
+        this.setState({
+          status: "TRIP WAS NOT FOUND. PLEASE CHECK URL AND TRY AGAIN."
+        });
       });
   }
 
@@ -116,7 +120,13 @@ class Trip extends Component {
         </div>
         <div className="map-container loading-container">
           { this.state.id === null ?
-            <p className="center-text">Loading...</p>
+            <p className="center-text">
+              { this.state.status === "TRIP WAS NOT FOUND. PLEASE CHECK URL AND TRY AGAIN." ?
+                "Error."
+                :
+                "Loading..."
+              }
+            </p>
             :
             <GoogleMapReact
               bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
