@@ -68,7 +68,7 @@ class Trip extends Component {
   }
 
   getData = () => {
-    if (this.state.status !== "ONGOING" || this.state.status !== "DANGER") {
+    if (this.state.status === "ARRIVED" || this.state.status === "CANCELLED") {
       clearInterval(this.intervalID);
       return;
     }
