@@ -13,7 +13,7 @@ Clone this repository and run
 npm install
 ```
 
-Obtain a Google Maps Javascript API key [here](https://developers.google.com/maps/documentation/javascript/tutorial)
+Obtain a Google Maps Javascript API key [here](https://developers.google.com/maps/documentation/javascript/tutorial).
 
 Install and deploy the corresponding back-end and mobile front-end component of the app. Change the BASE_URL found within src > components > trip.js
 
