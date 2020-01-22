@@ -1,2 +1,2 @@
-# Buddy App - Frontend Web Component
-======
+# Buddy - Frontend Web Component
+
