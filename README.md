@@ -27,4 +27,8 @@ Upload to a web hosting platform of your choice. Buddy was hosted on Heroku.
 
 ## Usage
 The webpage URL are dynamically routed using [React Router](https://reacttraining.com/react-router/core/guides/philosophy).
-Mobile app user's current location data is pulled from the back-end API every 5 seconds. This can be adjusted in the code. 
+Mobile app user's current location data is pulled from the back-end API every 10 seconds. The frquency can be adjusted in the Trip.js component:
+
+```sh
+this.intervalID = setInterval(this.getData, 10000); //Time interval specified in ms, here it is 10s
+```
