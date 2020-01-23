@@ -6,7 +6,7 @@ Buddy is a personal safety iOS app with three main features:
 
 Users send a pre-drafted SMS within the app that contains the URL to a web page that allows friends to monitor the progress of the trip. This repository contains the code for the web component.
 
-![Image of Webpage](https://github.com/TiffanyChio/buddyweb/master/src/assets/Example.png)
+![Image of Webpage](https://github.com/TiffanyChio/buddyweb/blob/master/src/assets/Example.png)
 
 ## Installation
 Clone this repository and run
